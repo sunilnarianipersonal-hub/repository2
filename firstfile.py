@@ -17,6 +17,7 @@ df = df.drop(['yr_built', 'yr_renovated'], axis=1)
 
 x = df.drop(['price'], axis=1)
 y = df['price'] 
+x = pd.get_dummies(x, drop_first=True)
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 
 lr = LinearRegression()
