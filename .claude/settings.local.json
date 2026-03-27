@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install:*)",
+      "Bash(python practice.py)",
+      "Bash(python -X utf8 practice.py)"
+    ]
+  }
+}
